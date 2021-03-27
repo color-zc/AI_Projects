@@ -50,8 +50,8 @@ def GA(d):
         
     # 随着迭代的进行，每个个体的适应度值应该会不断增加，所以总的适应度值fitness求平均应该会变大
     
-    best_fitness = max(fitness)
-    best_people = population[fitness.argmax()]
+    best_fitness = max(fitness_change)
+    best_people = population[fitness_change.argmax()]
     
     return best_people,best_fitness,fitness_change,population
     
